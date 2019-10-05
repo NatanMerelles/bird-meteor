@@ -5,7 +5,8 @@ o projeto consiste em uma pequena rede Social com posts e seguidores, as feature
 - Atualizações	da	timeline	em	real-time;
 - Sign-up	por	meio	de	e-mail	e	senha;
 - Sign-up	por	meio	de	uma	conta	no	Facebook;   
-- Acessar	perfil	de	um	usuário; Follow	e	unfollow	de	posts	de	um	usuário;
+- Acessar	perfil	de	um	usuário;
+- Follow	e	unfollow	de	usuários;
 
 Ao final, como forma de fixação do conteudo, resolvi implementar mais duas features:
 - Like nos posts - implementada 
