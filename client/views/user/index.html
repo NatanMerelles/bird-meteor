@@ -3,12 +3,13 @@
     <div class="text-center">
         {{#with user.profile}}
         <h1>{{name}}</h1>
-        <p>{{aboute}}</p>
+        <p>{{about}}</p>
         {{/with}}
-        {{>timeline}}
+        {{> friendship}}
+        {{> followButton}}
+        {{> timeline}}
     </div>
     {{else}}
     <h1>Usuario nao identificado.</h1>
-    <a href="{{pathFor 'home'}}">Homepage</a>
     {{/if}}
 </template>

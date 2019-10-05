@@ -2,16 +2,10 @@ import {Session} from "meteor/session";
 Template.profileForm.events({
     "submit form": function(e, template){
         e.preventDefault();
-        var inputs = template.findAll("input");
-        Meteor.users.update(
-            { _id: Meteor.userId()},
-            {
-                $set: {
-                    "profile.name": inputs[0].value,
-                    "profile.about": inputs[1].value
-                }
-            }
-        );
+        let inputs = template.findAll("input");
+        let name = inputs[0].value;
+        let about = inputs[1].value;
+        Meteor.call("profileUpdate", name, about);
         Session.set("editProfile", false);
     }
 })

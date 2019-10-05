@@ -6,6 +6,11 @@
             <blockquote class="lead">
                 <small>{{message}}</small>
                 <small>Autor: <a href="{{pathFor route='user' data=userId}}">{{name}}</a> </small>
+                {{#if alreadylike}}
+                    <button class="btn btn-danger" id="dislike" value="{{_id}}">Curtido</button>
+                    {{else}}
+                    <button class="btn btn-sucess" id="like" value="{{_id}}">Curtir</button>
+                {{/if}}
             </blockquote>
             <hr>
             {{else}}
